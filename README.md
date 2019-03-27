@@ -21,3 +21,4 @@ then use *homebrew* `brew install gcc@6`
 2. your encounter `error: unrecognized command line option '-Wshorten-64-to-32'` during compilation time under system default Python Interpreter(in mine case python2.7),try to use a higher version Python Interpreter(in mine case python3.5)
 
 
+# familiapy

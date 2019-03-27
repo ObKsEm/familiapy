@@ -6,7 +6,7 @@
 ## Installation
 
 ```
-    git clone --recurse-submodules https://github.com/bung87/familiapy
+    git clone --recurse https://github.com/ObksEm/familiapy
     make && make install
 ```  
 

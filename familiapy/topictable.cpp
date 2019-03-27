@@ -31,12 +31,6 @@ struct WordCountCmpGreater {
     }
 } word_count_cmp_greater;
 
-void load_config(const string &config_path) {
-    std::ifstream input(config_path);
-
-
-}
-
 // 加载词典信息
 void load_vocabulary(const string &vocabulary_path, unordered_map<int, string> &vocabulary) {
     std::ifstream infile(vocabulary_path);
@@ -84,8 +78,7 @@ void load_item_topic_table(const string &item_topic_table_path, vector<int64_t> 
 
 class TopicTable {
 public:
-    TopicTable(const string &config_path, const string &vocabulary_path, const string &item_topic_table_path) {
-        load_config(config_path);
+    TopicTable(int num_topics, const string &vocabulary_path, const string &item_topic_table_path) :_num_topics(num_topics) {
         _topic_sum_table.resize(_num_topics);
         _topic_words.resize(_num_topics);
         load_vocabulary(vocabulary_path, _vocabulary);
